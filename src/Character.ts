@@ -1,4 +1,4 @@
-import { Fighter } from './Fighter';
+import Fighter from './Fighter';
 import Race, { Elf } from './Races';
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
