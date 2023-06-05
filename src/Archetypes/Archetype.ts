@@ -4,6 +4,7 @@ export default abstract class Archetype {
   private _name: string;
   private _special: number;
   private _cost: number;
+  protected static _instances = 0;
 
   constructor(name: string) {
     this._name = name;
@@ -21,6 +22,10 @@ export default abstract class Archetype {
 
   get cost(): number {
     return this._cost;
+  }
+
+  protected static instances() {
+    this._instances += 1;
   }
 
   static createdArchetypeInstances(): number {
